@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body data-body>
     <header class="header">
@@ -388,7 +389,7 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer-figuration">
-        <div class="box-contact">
+        <div class="footer-contact-box">
           <a href="./index.html" class="logo link"
             ><span class="logo__web">Web</span><span class="logo__studio--white">Studio</span></a
           >
@@ -418,29 +419,29 @@
           <p class="join-title">присоединяйтесь</p>
           <ul class="list join-social-link">
             <li class="item">
-              <a href="" class="link footer-social-link" aria-label="Ссылка на instagram">
-                <svg class="footer-social-icon" width="20px" height="20px">
+              <a href="" class="link social-link-footer" aria-label="Ссылка на instagram">
+                <svg class="social-link-icon-footer" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a href="" class="link footer-social-link" aria-label="Ссылка на twitter">
-                <svg class="footer-social-icon" width="20px" height="20px">
+              <a href="" class="link social-link-footer" aria-label="Ссылка на twitter">
+                <svg class="social-link-icon-footer" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a href="" class="link footer-social-link" aria-label="Ссылка на faceboo">
-                <svg class="footer-social-icon" width="20px" height="20px">
+              <a href="" class="link social-link-footer" aria-label="Ссылка на faceboo">
+                <svg class="social-link-icon-footer" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a href="" class="link footer-social-link" aria-label="Ссылка на linkedin">
-                <svg class="footer-social-icon" width="20px" height="20px">
+              <a href="" class="link social-link-footer" aria-label="Ссылка на linkedin">
+                <svg class="social-link-icon-footer" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -449,14 +450,14 @@
         </div>
         <form class="footer-form">
           <div>
-            <p class="title-subscribe">Подпишитесь на рассылку</p>
+            <p class="footer-form-title-subscribe">Подпишитесь на рассылку</p>
             <div class="footer-form-fild">
               <label for="footer-subscribe" class="footer-form-lable"></label>
               <input
                 id="footer-subscribe"
                 type="email"
                 name="email"
-                class="footer-subscribe"
+                class="footer-form-subscribe"
                 placeholder="E-mail"
               />
               <button type="submit" class="button button-footer">
@@ -478,11 +479,13 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="modal-form">
-          <div class="title-modal"><strong>Оставьте свои данные, мы вам перезвоним</strong></div>
+        <form class="modal-form form">
+          <div class="modal-title"><strong>Оставьте свои данные, мы вам перезвоним</strong></div>
 
           <div class="form-fild">
-            <label for="user-name" class="form-lable"><span class="label-title">Имя</span></label>
+            <label for="user-name" class="form-lable"
+              ><span class="form-label-title">Имя</span></label
+            >
             <div class="modal-position-icon">
               <input id="user-name" type="text" name="user-name" class="form-input" />
               <svg width="12px" height="12px" class="modal-icon">
@@ -493,7 +496,7 @@
 
           <div class="form-fild">
             <label for="user-tel" class="form-lable"
-              ><span class="label-title">Телефон</span></label
+              ><span class="form-label-title">Телефон</span></label
             >
             <div class="modal-position-icon">
               <input id="user-tel" type="tel" name="tel" class="form-input" />
@@ -505,7 +508,7 @@
 
           <div class="form-fild">
             <label for="user-email" class="form-lable"
-              ><span class="label-title">Почта</span></label
+              ><span class="form-label-title">Почта</span></label
             >
             <div class="modal-position-icon">
               <input id="user-email" type="email" name="email" class="form-input" />
@@ -515,12 +518,12 @@
             </div>
           </div>
 
-          <label class="label-comment">
-            <span class="label-title-comment">Комментарий</span>
-            <textarea placeholder="Введите текст" name="comment" class="comment"></textarea>
+          <label class="textarea-label">
+            <span class="textarea-label-title">Комментарий</span>
+            <textarea placeholder="Введите текст" name="comment" class="textarea"></textarea>
           </label>
 
-          <label class="form-checkbox">
+          <label class="checkbox">
             <input type="checkbox" name="checkbox" class="form-accept visually-hidden" />
             <span class="checkbox-icon">
               <svg class="icon" width="16px" height="15px">
@@ -528,10 +531,11 @@
               </svg>
             </span>
             <span class="checkbox-title"
-              >Соглашаюсь с рассылкой и принимаю <a href="" class="contract">Условия договора</a>
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="checkbox-contract">Условия договора</a>
             </span>
           </label>
-          <button type="submit" class="button modal-form-button">Отправить</button>
+          <button type="submit" class="button button-modal-form">Отправить</button>
         </form>
       </div>
     </div>

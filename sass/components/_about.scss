@@ -1,0 +1,17 @@
+.about {
+  padding-top: 0px;
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 30px;
+  }
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__thumb {
+    position: relative;
+  }
+}
